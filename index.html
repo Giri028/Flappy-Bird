@@ -137,8 +137,17 @@ function enableAudio() {
 
 /* ---------- DRAW ---------- */
 function drawBird() {
+    // Body
     ctx.fillStyle = '#FFD700';
     ctx.fillRect(bird.x, bird.y, bird.w, bird.h);
+
+    // Eye
+    ctx.fillStyle = 'black';
+    ctx.fillRect(bird.x + bird.w - 10, bird.y + 6, 4, 4);
+
+    // Beak
+    ctx.fillStyle = '#FF6347';
+    ctx.fillRect(bird.x + bird.w, bird.y + 10, 8, 6);
 }
 
 function drawPipes() {
